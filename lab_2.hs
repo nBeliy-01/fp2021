@@ -20,7 +20,7 @@
 -- getTail _ [] = []
 -- getTail 0 _ = [] 
 -- getTail n (_:xs) = getTail (n-1) xs
-
+    
 -- getHead _ [] = []
 -- getHead 0 _ = []
 -- getHead n (x:xs) = x:getHead (n-1) xs
