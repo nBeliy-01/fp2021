@@ -18,7 +18,7 @@ rever list = foldl (flip (:)) [] list-- Prelude.reverse [...]
 rev :: [a] -> [a]
 rev [] = []
 rev (x:xs) = reverse xs
--- :l lab_3.hs
+        -- :l lab_3.hs
 -- rev "abcdefg000"
 -- "000gfedcba"
 
