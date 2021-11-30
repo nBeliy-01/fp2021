@@ -6,16 +6,26 @@
 
 -- завдання №1 (I варіант)
 rever list = foldl (flip (:)) [] list-- Prelude.reverse [...]
+-- ghci
+-- :l lab_3.hs
+-- rever "abcdefg000"
+-- "000gfedcba"
 
 -- завдання №1 (ІІ варіант)
 rev :: [a] -> [a]
 rev [] = []
 rev (x:xs) = reverse xs
+-- :l lab_3.hs
+-- rev "abcdefg000"
+-- "000gfedcba"
 
 -- завдання №2 
 func:: [a]->[a]
 func []=[]
 func (x:xs) = x : func (reverse xs)
+-- :l lab_3.hs
+-- func "abcdefg000"
+-- "a0b0c0dgef"
 
 -- В ході виконання лабораторної роботи ознаймлено з функціями вищого порядку 
 -- мови Haskell, також було створено функцію, яка перевертає елементи списку
