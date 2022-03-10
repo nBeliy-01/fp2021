@@ -25,6 +25,12 @@
 -- getHead 0 _ = []
 -- getHead n (x:xs) = x:getHead (n-1) xs
 
+getHead _ [] = []
+getHead 0 _ = []
+getHead n (x:xs) = x:getHead (n-1) xs
+
+slice :: [a]->Char->Int->[a]
+slice from to xs = getHead from xs 
 -- slice :: Int->Int->[a]->[a]
 -- slice from to xs = getHead from xs ++ getTail to xs
 
